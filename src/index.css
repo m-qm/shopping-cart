@@ -1,8 +1,23 @@
+
+@font-face {
+  font-family: 'Harmonia';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/Harmonia/Harmonia.ttf'); /* IE9 Compat Modes */
+  src: local('Harmonia'),
+       url('../src/fonts/Harmonia/Harmonia.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../src/fonts/Harmonia/Harmonia.ttf') format('woff2'), /* Super Modern Browsers */
+       url('../src/fonts/Harmonia/Harmonia.ttf') format('woff'), /* Modern Browsers */
+       url('../src/fonts/Harmonia/Harmonia.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../src/fonts/Harmonia/Harmonia.ttf') format('svg'); /* Legacy iOS */
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Playfair Display', serif;
+
+  /* font-family: 'Harmonia', 'Open Sans'; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

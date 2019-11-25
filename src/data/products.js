@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     sku: '876661122392077_1',
-    title: 'Sphynx Tie Dye Grey T-Shirt',
+    name: 'Sphynx Tie Dye Grey T-Shirt',
     description: 'Sphynx Tie Dye Grey',
     availableSizes: ['X', 'L', 'XL', 'XXL'],
     price: 10,
@@ -12,7 +12,7 @@ const products = [
   {
     id: 2,
     sku: '5619496040738316_1',
-    title: 'Danger Knife Grey T-Shirt',
+    name: 'Danger Knife Grey T-Shirt',
     description: 'Danger Knife Grey',
     availableSizes: ['X', 'M', 'L'],
     price: 14.9,
@@ -22,7 +22,7 @@ const products = [
   {
     id: 3,
     sku: '6090484789343891_1',
-    title: 'White DGK Script Tee',
+    name: 'White DGK Script Tee',
     description: 'White DGK Script',
     availableSizes: ['X', 'M', 'L'],
     price: 14.9,
@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     sku: '10547961582846888_1',
-    title: 'Born On The Streets  T-Shirt',
+    name: 'Born On The Streets  T-Shirt',
     description: 'Born On The Streets',
     availableSizes: ['XL'],
     price: 25.9,
@@ -42,7 +42,7 @@ const products = [
   {
     id: 5,
     sku: '11600983276356164_1',
-    title: 'Tso 3D Short Sleeve T-Shirt A',
+    name: 'Tso 3D Short Sleeve T-Shirt A',
     description: 'Tso 3D Short Sleeve',
     availableSizes: ['X', 'L', 'XL'],
     price: 10.9,
@@ -52,7 +52,7 @@ const products = [
   {
     id: 6,
     sku: '18644119330491310_1',
-    title: 'Man Tie Dye Cinza Grey T-Shirt',
+    name: 'Man Tie Dye Cinza Grey T-Shirt',
     description: 'Man Tie Dye Cinza Grey',
     availableSizes: ['XL', 'XXL'],
     price: 49.9,
@@ -62,7 +62,7 @@ const products = [
   {
     id: 7,
     sku: '18532669286405344_1',
-    title: 'Crazy Monkey Black T-Shirt',
+    name: 'Crazy Monkey Black T-Shirt',
     description: '1977 Infantil',
     availableSizes: ['S'],
     style: 'Preto com listras brancas',
@@ -73,7 +73,7 @@ const products = [
   {
     id: 8,
     sku: '11854078013954528_1',
-    title: 'Tso 3D Black T-Shirt',
+    name: 'Tso 3D Black T-Shirt',
     description: '',
     availableSizes: ['XL'],
     style: 'Azul oscuro',
@@ -83,7 +83,7 @@ const products = [
   {
     id: 9,
     sku: '18644119330491310_1',
-    title: 'Crazy Monkey Grey',
+    name: 'Crazy Monkey Grey',
     description: '',
     availableSizes: ['L', 'XL'],
     price: 134.9,

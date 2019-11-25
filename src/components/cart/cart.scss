@@ -1,0 +1,40 @@
+.cart-container {
+  position: sticky;
+  margin: 50px auto;
+  top: 10px;
+  height: 100%;
+  position: relative;
+  z-index: 99;
+  color: #00112c;
+  font-family: Fakt, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans,
+    helvetica neue, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  padding-left: 0;
+  position: sticky;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td,
+th {
+  padding: 6px;
+  text-align: center;
+}
+
+.itemNumber,
+.itemName {
+  min-width: 100px;
+}
+// CART Items
