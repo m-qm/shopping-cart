@@ -2,8 +2,6 @@ import React, {useEffect, useRef, useContext} from 'react';
 import {ADYEN_JS_URL, ADYEN_CSS_URL} from './config';
 import paymentMethodsMock from '../data/paymentMethodsMock.json';
 // import {CartContext} from './cart/context';
-//
-
 // import {Client, Config, AdyenCheckout} from '@adyen/api-library';
 
 const CHECKOUT_APIKEY = process.env.REACT_APP_API_KEY;
