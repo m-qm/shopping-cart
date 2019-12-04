@@ -4,7 +4,6 @@ import Cart from "../cart"
 import Navbar from "../Navbar"
 import AdyenDropin from "../AdyenDropin"
 
-
 import { CartContext } from "../cart/context"
 import './store.css'
 
@@ -41,6 +40,7 @@ export default function Store() {
       <div className="cart-container">
         <Cart />
         <AdyenDropin />
+
         </div>
     </div>
     </div>

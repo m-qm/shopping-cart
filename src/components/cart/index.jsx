@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react"
 import { CartContext } from "./context"
 import AdyenDropin from '../AdyenDropin';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 
 import './cart.scss'
 
@@ -16,7 +16,7 @@ function totalPrice(items) {
 
 export default function Cart({ adyenToken }) {
   const ctx = useContext(CartContext)
-  
+  // eslint-disable-next-line
   const [redirect, setRedirect] = useState(false);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Cart({ adyenToken }) {
 
   
   function checkout() {
-    AdyenDropin.redirectToCheckout({
+    AdyenDropin.dropin({
       products: ctx.items.map(item => ({
         quantity: item.quantity,
         sku: item.sku
@@ -72,7 +72,7 @@ export default function Cart({ adyenToken }) {
 
           <tr>
             <td style={{ textAlign: "right" }} colSpan={4}>
-              <button className="button-shop" onClick={redirect}>Checkout</button>
+              <button className="button-shop" onClick={checkout}>Checkout</button>
             </td>
 
           </tr>
