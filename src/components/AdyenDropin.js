@@ -1,13 +1,13 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useContext} from 'react';
 import {ADYEN_JS_URL, ADYEN_CSS_URL} from './config';
 import paymentMethodsMock from '../data/paymentMethodsMock.json';
-// import {CartContext} from './cart/context';
+import {CartContext} from './cart/context';
 
 const CHECKOUT_APIKEY = process.env.REACT_APP_API_KEY;
 
 // const MERCHANT_ACCOUNT = process.env.REACT_APP_MERCHANT_ACCOUNT;
 
-export default function AdyenDropin () {
+export default function AdyenDropin (data) {
   function initAdyenCheckout () {
     const configuration = {
       locale: 'en_US',
@@ -20,15 +20,15 @@ export default function AdyenDropin () {
       },
     };
 
-    // You can add AdyenCheckout to your list of globals and then delete the window reference:
+    // You can add AdyenCheckout to your list of globals and then delete the window
+    // reference:
     const checkout = new window.AdyenCheckout (configuration);
-    // If you need to refer to the dropin externaly, you can save this inside a variable:
-
-    // eslint-disable-next-line
+    // If you need to refer to the dropin externaly, you can save this inside a
+    // variable: eslint-disable-next-line
     const dropin = checkout
       .create ('dropin', {
-        onSubmit: (cartCtx, dropin) => {
-          console.log (cartCtx);
+        onSubmit: (data, dropin) => {
+          console.log (data);
           dropin.setStatus ('loading');
 
           // makePaymentCall(props.data).then...
@@ -41,7 +41,7 @@ export default function AdyenDropin () {
   }
 
   const dropinRef = useRef (null);
-  // const cartCtx = useContext (CartContext);
+  const cartCtx = useContext (CartContext);
 
   useEffect (() => {
     const link = document.createElement ('link');

@@ -40,6 +40,7 @@ export default function Store() {
       <div className="cart-container">
         <Cart />
         <AdyenDropin />
+        {/* <Dropin /> */}
 
         </div>
     </div>
