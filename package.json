@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@adyen/api-library": "^2.1.7",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "isomorphic-unfetch": "^3.0.0",
     "node-sass": "^4.13.0",
